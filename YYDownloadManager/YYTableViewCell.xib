@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="custonCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="custonCell" rowHeight="83" id="KGk-i7-Jjw" customClass="YYTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="496" height="83"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="496" height="82"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eo9-Wp-7b1">
+                        <rect key="frame" x="10" y="10" width="476" height="72"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nU5-Qq-tSg">
+                                <rect key="frame" x="10" y="10" width="266" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" misplaced="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ZWo-qE-0eQ">
+                                <rect key="frame" x="10" y="58" width="456" height="4"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="4" id="bCN-IZ-57J"/>
+                                </constraints>
+                                <color key="progressTintColor" red="1" green="0.52870452226071418" blue="0.063139064340314244" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="trackTintColor" red="0.36350152795978685" green="1" blue="0.42068923064137054" alpha="1" colorSpace="calibratedRGB"/>
+                            </progressView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9mI-P0-vEW" customClass="YYDelayButton">
+                                <rect key="frame" x="376" y="10" width="90" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Usa-AS-hgj"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="clickButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="PIQ-9D-Qtg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95294117649999999" green="0.90196078430000004" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="nU5-Qq-tSg" firstAttribute="top" secondItem="Eo9-Wp-7b1" secondAttribute="top" constant="10" id="5pH-P8-uuB"/>
+                            <constraint firstItem="nU5-Qq-tSg" firstAttribute="leading" secondItem="Eo9-Wp-7b1" secondAttribute="leading" constant="10" id="6A8-oK-bxi"/>
+                            <constraint firstAttribute="trailing" secondItem="9mI-P0-vEW" secondAttribute="trailing" constant="10" id="BSB-fl-8SQ"/>
+                            <constraint firstAttribute="bottom" secondItem="nU5-Qq-tSg" secondAttribute="bottom" constant="30" id="RiO-xe-gZf"/>
+                            <constraint firstItem="ZWo-qE-0eQ" firstAttribute="leading" secondItem="Eo9-Wp-7b1" secondAttribute="leading" constant="10" id="ZQ9-TF-VgI"/>
+                            <constraint firstItem="9mI-P0-vEW" firstAttribute="leading" secondItem="nU5-Qq-tSg" secondAttribute="trailing" constant="100" id="b3k-Su-xdD"/>
+                            <constraint firstItem="9mI-P0-vEW" firstAttribute="top" secondItem="Eo9-Wp-7b1" secondAttribute="top" constant="10" id="fUD-q4-gEo"/>
+                            <constraint firstAttribute="trailing" secondItem="nU5-Qq-tSg" secondAttribute="trailing" constant="200" id="iHF-Yu-b71"/>
+                            <constraint firstAttribute="trailing" secondItem="ZWo-qE-0eQ" secondAttribute="trailing" constant="10" id="q3d-DL-JnZ"/>
+                            <constraint firstAttribute="bottom" secondItem="ZWo-qE-0eQ" secondAttribute="bottom" constant="10" id="rCF-LK-rWk"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Eo9-Wp-7b1" secondAttribute="trailing" constant="10" id="43d-ME-j7f"/>
+                    <constraint firstItem="Eo9-Wp-7b1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Ffs-Mg-OaO"/>
+                    <constraint firstItem="Eo9-Wp-7b1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="TWW-AE-SAC"/>
+                    <constraint firstAttribute="bottom" secondItem="Eo9-Wp-7b1" secondAttribute="bottom" id="pNt-sf-LcW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="backView" destination="Eo9-Wp-7b1" id="Ula-7J-haT"/>
+                <outlet property="clickBtn" destination="9mI-P0-vEW" id="toc-lN-iTA"/>
+                <outlet property="progressView" destination="ZWo-qE-0eQ" id="th4-EH-ByZ"/>
+                <outlet property="viewName" destination="nU5-Qq-tSg" id="Y7p-pK-jRW"/>
+            </connections>
+            <point key="canvasLocation" x="371" y="277.5"/>
+        </tableViewCell>
+    </objects>
+</document>

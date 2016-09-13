@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "YYViewController.h"
 
 @interface ViewController ()
 
@@ -22,6 +23,11 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)myDownloadPage:(UIButton *)sender {
+    
+    YYViewController *vc = [[YYViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 @end
